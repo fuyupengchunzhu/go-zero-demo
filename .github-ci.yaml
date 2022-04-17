@@ -1,0 +1,11 @@
+# go-zero-demo
+
+stages:
+- analysis
+
+analysis:
+stage: analysis
+image: golang
+script:
+- go version && go env
+- go test -short $
